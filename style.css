@@ -1,0 +1,60 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 100vw;
+	height: 100vh;
+
+	background-color: crimson;
+}
+
+canvas {
+	border: 2px solid white;
+}
+
+#controls {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+}
+
+#controls button {
+	font-size: 45px;
+	border: 0;
+	background-color: transparent;
+}
+
+.up {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.left {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.right {
+	grid-column: 3;
+	grid-row: 2;
+}
+
+.down {
+	grid-column: 2;
+	grid-row: 3;
+}
+
+.points-log {
+	color: white;
+	font-size: 50px;
+	font-family: 'Courier New', Courier, monospace;
+}
